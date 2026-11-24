@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinthiya Islam | Entrepreneur &amp; Real Estate Development, Central London</title>
+  <meta name="description" content="Personal portfolio of Sinthiya Islam — Entrepreneur specializing in Real Estate Development &amp; Investments in Central London, UK. Alumna of The University of Manchester, originally from Sylhet, Bangladesh." />
+  <meta name="keywords" content="Sinthiya Islam, Real Estate Development, Property Investment, Central London, Fitzrovia, Hudsons Property, University of Manchester, Entrepreneur" />
+  <meta name="author" content="Sinthiya Islam" />
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Modern Geometric Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#141416',
+            charcoal: '#1E1E22',
+            alabaster: '#FAF8F5',
+            ivory: '#F3EFEA',
+            champagne: '#C5A059',
+            champagneDark: '#A6833E',
+            blush: '#E8D5CE',
+            blushSoft: '#F5ECE8',
+            slateInk: '#4A4A52',
+          },
+          boxShadow: {
+            editorial: '0 24px 60px -15px rgba(20, 20, 22, 0.08)',
+            goldGlow: '0 12px 35px -8px rgba(197, 160, 89, 0.28)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom Editorial Styling & Subtle Reveal Transitions */
+    body {
+      background-color: #FAF8F5;
+      color: #141416;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    /* Subtle Scroll Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Editorial Gold Hairline Divider */
+    .gold-rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.55), transparent);
+    }
+
+    /* Image Frame Hover Zoom */
+    .photo-frame img {
+      transition: transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .photo-frame:hover img {
+      transform: scale(1.035);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4C5B3;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C5A059;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-champagne/20 selection:text-obsidian">
+
+  <!-- ===================================================================== -->
+  <!-- 1. STICKY GLASSMORPHIC NAVIGATION                                     -->
+  <!-- ===================================================================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-alabaster/85 backdrop-blur-md border-b border-obsidian/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Monogram & Name -->
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+          <span class="w-10 h-10 rounded-full bg-obsidian text-champagne font-editorial text-xl font-semibold flex items-center justify-center border border-champagne/40 shadow-sm group-hover:bg-champagne group-hover:text-obsidian transition-colors duration-300">
+            SI
+          </span>
+          <div class="flex flex-col">
+            <span class="font-editorial text-2xl font-semibold tracking-tight text-obsidian leading-none">
+              Sinthiya Islam
+            </span>
+            <span class="text-[10px] uppercase tracking-[0.22em] text-slateInk mt-1">
+              Central London
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slateInk" aria-label="Primary Navigation">
+          <a href="#about" class="hover:text-obsidian transition-colors py-2">About</a>
+          <a href="#education" class="hover:text-obsidian transition-colors py-2">Education</a>
+          <a href="#skills" class="hover:text-obsidian transition-colors py-2">Expertise</a>
+          <a href="#experience" class="hover:text-obsidian transition-colors py-2">Ventures &amp; Strategy</a>
+          <a href="#milestones" class="hover:text-obsidian transition-colors py-2">Lifestyle</a>
+          <a href="#gallery" class="hover:text-obsidian transition-colors py-2">Gallery</a>
+          <a href="#social" class="hover:text-obsidian transition-colors py-2">Social</a>
+        </nav>
+
+        <!-- Desktop CTA & Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-obsidian text-alabaster text-xs font-semibold uppercase tracking-widest hover:bg-champagne hover:text-obsidian transition-all duration-300 shadow-sm">
+            <span>Connect</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-xl border border-obsidian/10 text-obsidian hover:bg-ivory transition-colors">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-alabaster border-b border-obsidian/10 px-6 pt-3 pb-7 shadow-xl">
+      <nav class="flex flex-col space-y-2 text-base font-medium text-obsidian">
+        <a href="#about" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">About Me</a>
+        <a href="#education" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">Education</a>
+        <a href="#skills" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">Skills &amp; Expertise</a>
+        <a href="#experience" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">Experience &amp; Strategy</a>
+        <a href="#milestones" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">Milestones &amp; Lifestyle</a>
+        <a href="#gallery" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">Photo Gallery</a>
+        <a href="#social" class="mobile-nav-link py-2.5 px-3 rounded-xl hover:bg-ivory">Social Media</a>
+        <a href="#contact" class="mobile-nav-link mt-2 py-3 px-4 rounded-full bg-obsidian text-alabaster text-center text-sm uppercase tracking-widest">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 2. HERO SECTION                                                       -->
+  <!-- ===================================================================== -->
+  <main id="home" class="pt-28 pb-20 md:pt-36 md:pb-28 relative overflow-hidden">
+    <!-- Subtle Warm Decorative Glows -->
+    <div aria-hidden="true" class="pointer-events-none absolute -top-24 right-0 w-[34rem] h-[34rem] rounded-full bg-blush/35 blur-3xl"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute bottom-0 -left-24 w-[28rem] h-[28rem] rounded-full bg-champagne/10 blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        
+        <!-- Left Column: Identity, Narrative & CTAs -->
+        <div class="lg:col-span-7 space-y-7 reveal">
+          <!-- Heritage & Location Pill -->
+          <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-ivory border border-champagne/30 text-xs font-medium text-obsidian">
+            <span class="w-2 h-2 rounded-full bg-champagne animate-pulse"></span>
+            <span>Central London, UK</span>
+            <span class="text-champagne">•</span>
+            <span class="text-slateInk">Sylhet Roots &amp; British Citizen</span>
+          </div>
+
+          <!-- Editorial Main Headline -->
+          <div class="space-y-4">
+            <p class="text-xs sm:text-sm uppercase tracking-[0.26em] text-champagneDark font-semibold">
+              Entrepreneur &bull; Real Estate Development &amp; Investments
+            </p>
+            <h1 class="font-editorial text-5xl sm:text-6xl lg:text-7xl font-semibold text-obsidian leading-[1.06] tracking-tight">
+              Sinthiya <span class="italic font-normal text-champagneDark">Islam</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slateInk font-light leading-relaxed max-w-2xl">
+              Building enduring value across London’s property landscape—bridging disciplined investment strategy, entrepreneurial vision, and a deep appreciation for cross-cultural connection from Ratargul, Sylhet to the heart of Central London.
+            </p>
+          </div>
+
+          <!-- Key Snapshot Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-2 max-w-xl">
+            <div class="p-4 rounded-2xl bg-white/80 border border-obsidian/5 shadow-sm">
+              <p class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">7+ Yrs</p>
+              <p class="text-xs text-slateInk mt-0.5">Life in the UK (Since Jan 2019)</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/80 border border-obsidian/5 shadow-sm">
+              <p class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">West End</p>
+              <p class="text-xs text-slateInk mt-0.5">Central London Focus</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/80 border border-obsidian/5 shadow-sm">
+              <p class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">UoM</p>
+              <p class="text-xs text-slateInk mt-0.5">Business Alumna</p>
+            </div>
+          </div>
+
+          <!-- Primary Call-to-Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#experience" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-obsidian text-alabaster text-sm font-semibold tracking-wide hover:bg-champagne hover:text-obsidian transition-all duration-300 shadow-editorial">
+              <span>Explore Ventures &amp; Strategy</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="#about" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white text-obsidian border border-obsidian/15 text-sm font-semibold tracking-wide hover:border-champagne hover:bg-ivory transition-all duration-300">
+              <span>Read My Story</span>
+            </a>
+          </div>
+
+          <!-- Direct Verified Social Links Bar -->
+          <div class="pt-4 flex flex-wrap items-center gap-5 text-sm text-slateInk">
+            <span class="text-xs uppercase tracking-widest text-slateInk/75 font-semibold">Official Profiles:</span>
+            <div class="flex items-center gap-3">
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/sinthiya81islam/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (@sinthiya81islam)" class="w-10 h-10 rounded-full bg-white border border-obsidian/10 flex items-center justify-center text-obsidian hover:bg-obsidian hover:text-champagne hover:border-obsidian transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/yoursinthiyaislam" target="_blank" rel="noopener noreferrer" aria-label="Facebook (yoursinthiyaislam)" class="w-10 h-10 rounded-full bg-white border border-obsidian/10 flex items-center justify-center text-obsidian hover:bg-obsidian hover:text-champagne hover:border-obsidian transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+              </a>
+              <!-- X (Twitter) -->
+              <a href="https://x.com/sinthiyaislam81" target="_blank" rel="noopener noreferrer" aria-label="X (@sinthiyaislam81)" class="w-10 h-10 rounded-full bg-white border border-obsidian/10 flex items-center justify-center text-obsidian hover:bg-obsidian hover:text-champagne hover:border-obsidian transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:sinthiyaislam2026@atomicmail.io" aria-label="Email Sinthiya" class="w-10 h-10 rounded-full bg-white border border-obsidian/10 flex items-center justify-center text-obsidian hover:bg-obsidian hover:text-champagne hover:border-obsidian transition-all duration-300 shadow-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="3"/>
+                  <path d="m3 7 9 6 9-6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Executive Portrait -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Offset Champagne Gold Frame Accent -->
+            <div aria-hidden="true" class="absolute -inset-3 sm:-inset-4 rounded-[2rem] border border-champagne/45 translate-x-2 translate-y-2 sm:translate-x-3 sm:translate-y-3"></div>
+            
+            <!-- Main Portrait Container -->
+            <div class="photo-frame relative rounded-[2rem] overflow-hidden bg-charcoal shadow-editorial aspect-[4/5]">
+              <img 
+                src="assets/midnight_purple_embroidered_elegance.png" 
+                alt="Sinthiya Islam — Entrepreneur in Central London" 
+                class="w-full h-full object-cover object-top"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/1E1E22/C5A059?text=Sinthiya+Islam';"
+              />
+              <!-- Subtle Bottom Gradient & Caption Badge -->
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-obsidian/85 via-obsidian/35 to-transparent p-6 sm:p-7 text-alabaster">
+                <div class="flex items-end justify-between gap-4">
+                  <div>
+                    <p class="text-[11px] uppercase tracking-[0.2em] text-champagne font-semibold">London • Manchester • Sylhet</p>
+                    <p class="font-editorial text-2xl font-medium mt-0.5">Sinthiya Islam</p>
+                  </div>
+                  <span class="px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-[11px] font-medium border border-white/20">
+                    UK Citizen
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="gold-rule max-w-6xl mx-auto"></div>
+
+  <!-- ===================================================================== -->
+  <!-- 3. ABOUT ME & PERSONAL JOURNEY TIMELINE                               -->
+  <!-- ===================================================================== -->
+  <section id="about" class="py-20 md:py-28 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: Warm Personal Portrait -->
+        <div class="lg:col-span-5 order-2 lg:order-1 reveal">
+          <div class="relative max-w-md mx-auto lg:max-w-none">
+            <div class="photo-frame rounded-[2rem] overflow-hidden shadow-editorial bg-blushSoft aspect-[4/5] border border-obsidian/5">
+              <img 
+                src="assets/executive_portrait_in_london.png" 
+                alt="Sinthiya Islam — Warm personal portrait" 
+                class="w-full h-full object-cover object-center"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/E8D5CE/141416?text=Sinthiya+Islam';"
+              />
+            </div>
+            <!-- Floating Personal Philosophy Quote Card -->
+            <div class="mt-6 sm:mt-0 sm:absolute sm:-bottom-6 sm:-right-6 max-w-xs bg-obsidian text-alabaster p-5 rounded-2xl shadow-editorial border border-champagne/30">
+              <p class="font-editorial italic text-lg leading-snug text-blushSoft">
+                “True success isn’t achieved in isolation—it is built through dedication, mentorship, and lifting others along the way.”
+              </p>
+              <p class="text-[11px] uppercase tracking-widest text-champagne mt-2.5 font-semibold">— Sinthiya Islam</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Personal Story & Location Timeline -->
+        <div class="lg:col-span-7 order-1 lg:order-2 space-y-7 reveal">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">About Me &amp; My Journey</p>
+            <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2 leading-tight">
+              Rooted in Sylhet’s Serenity, Thriving in <span class="italic font-normal text-champagneDark">Central London</span>
+            </h2>
+          </div>
+
+          <div class="space-y-4 text-slateInk leading-relaxed text-base">
+            <p>
+              My story began amidst the lush greenery and tranquil freshwater swamp forests of <strong class="text-obsidian font-semibold">Ratargul, Gowainghat, Sylhet, Bangladesh</strong>. Growing up surrounded by natural beauty—from Ratargul to Jaflong and Bichnakandi—instilled in me a lifelong appreciation for nature, community, and resilience.
+            </p>
+            <p>
+              In <strong class="text-obsidian font-semibold">January 2019</strong>, I relocated to the United Kingdom, embarking on a transformative chapter that has now spanned over <strong class="text-obsidian font-semibold">7 years and 10 months</strong>. Having earned <strong class="text-obsidian font-semibold">British Citizenship</strong>, the UK is no longer merely where I reside—it is home, and the foundation where I am building my long-term future.
+            </p>
+            <p>
+              After pursuing my university education in Manchester starting in 2020, I moved to <strong class="text-obsidian font-semibold">Central London in May 2023</strong> to immerse myself in real estate development, strategic investments, and London’s dynamic international community.
+            </p>
+          </div>
+
+          <!-- Horizontal / Responsive Journey Milestones -->
+          <div class="pt-3">
+            <h3 class="text-xs uppercase tracking-[0.2em] text-obsidian font-bold mb-4">Geographic &amp; Life Timeline</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-white border border-obsidian/8 hover:border-champagne/60 transition-colors">
+                <span class="text-xs font-bold text-champagneDark uppercase tracking-wider">Early Years</span>
+                <h4 class="font-editorial text-xl font-semibold text-obsidian mt-0.5">Ratargul, Sylhet</h4>
+                <p class="text-xs text-slateInk mt-1">Born and raised in Gowainghat, Sylhet—grounded in Bengali heritage and family values.</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-obsidian/8 hover:border-champagne/60 transition-colors">
+                <span class="text-xs font-bold text-champagneDark uppercase tracking-wider">January 2019</span>
+                <h4 class="font-editorial text-xl font-semibold text-obsidian mt-0.5">Relocated to the UK</h4>
+                <p class="text-xs text-slateInk mt-1">Arrived in the United Kingdom ahead of the global pandemic to pursue new horizons.</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-obsidian/8 hover:border-champagne/60 transition-colors">
+                <span class="text-xs font-bold text-champagneDark uppercase tracking-wider">2020 — 2023</span>
+                <h4 class="font-editorial text-xl font-semibold text-obsidian mt-0.5">Manchester Chapter</h4>
+                <p class="text-xs text-slateInk mt-1">Lived in Manchester while studying Business at The University of Manchester.</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-obsidian/8 hover:border-champagne/60 transition-colors">
+                <span class="text-xs font-bold text-champagneDark uppercase tracking-wider">May 2023 — Present</span>
+                <h4 class="font-editorial text-xl font-semibold text-obsidian mt-0.5">Central London &amp; UK Citizen</h4>
+                <p class="text-xs text-slateInk mt-1">Residing in Central London, focused on real estate ventures and building a permanent future.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. EDUCATION SECTION                                                  -->
+  <!-- ===================================================================== -->
+  <section id="education" class="py-20 md:py-24 bg-ivory/70 border-y border-obsidian/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="max-w-3xl mb-12 reveal">
+        <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">Academic Foundation</p>
+        <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2">
+          Education &amp; <span class="italic font-normal text-champagneDark">Business Acumen</span>
+        </h2>
+        <p class="text-slateInk mt-3 text-base leading-relaxed">
+          Formal business training in one of the United Kingdom’s premier academic environments laid the analytical groundwork for my career in property development and investment management.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch reveal">
+        <!-- Primary University Card -->
+        <div class="lg:col-span-8 bg-white rounded-3xl p-8 sm:p-10 border border-obsidian/8 shadow-editorial flex flex-col justify-between relative overflow-hidden">
+          <div aria-hidden="true" class="absolute top-0 right-0 w-40 h-40 bg-champagne/10 rounded-bl-full"></div>
+          
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <span class="px-4 py-1.5 rounded-full bg-obsidian text-champagne text-xs font-semibold uppercase tracking-widest">
+                Higher Education • United Kingdom
+              </span>
+              <span class="text-sm font-medium text-slateInk">Commenced 2020 • Manchester, UK</span>
+            </div>
+
+            <h3 class="font-editorial text-3xl sm:text-4xl font-semibold text-obsidian">
+              The University of Manchester
+            </h3>
+            <p class="text-lg font-medium text-champagneDark mt-1">
+              Degree in Business / Business Studies
+            </p>
+
+            <p class="text-slateInk mt-5 leading-relaxed">
+              Relocating to Manchester in 2020 to study Business at <strong class="text-obsidian font-semibold">The University of Manchester</strong> shaped my commercial mindset, strategic decision-making, and understanding of financial markets. Living in Manchester immersed me in a vibrant, multicultural student and business ecosystem before transitioning to London.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-obsidian/8 flex flex-wrap gap-2.5">
+            <span class="px-3.5 py-1.5 rounded-full bg-ivory text-obsidian text-xs font-medium">Business Strategy</span>
+            <span class="px-3.5 py-1.5 rounded-full bg-ivory text-obsidian text-xs font-medium">Financial Discipline</span>
+            <span class="px-3.5 py-1.5 rounded-full bg-ivory text-obsidian text-xs font-medium">Commercial Analysis</span>
+            <span class="px-3.5 py-1.5 rounded-full bg-ivory text-obsidian text-xs font-medium">Entrepreneurial Leadership</span>
+          </div>
+        </div>
+
+        <!-- Complementary Learning & Mentorship Card -->
+        <div class="lg:col-span-4 bg-obsidian text-alabaster rounded-3xl p-8 sm:p-9 shadow-editorial flex flex-col justify-between border border-champagne/25">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-champagne/15 border border-champagne/40 flex items-center justify-center text-champagne mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-white">
+              Continuous Market Education
+            </h3>
+            <p class="text-sm text-alabaster/80 mt-3 leading-relaxed">
+              Beyond formal university studies, I continuously sharpen my expertise in wealth structuring, asset protection, and capital markets—drawing educational inspiration from advisors such as <strong class="text-champagne font-medium">Toby Mathis</strong> and studying institutional market dynamics.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-5 border-t border-white/10">
+            <p class="text-xs uppercase tracking-widest text-champagne font-semibold">Core Focus</p>
+            <p class="text-sm text-alabaster/90 mt-1">Lifelong Skill Acquisition &amp; Global Networking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. SKILLS & EXPERTISE SECTION                                         -->
+  <!-- ===================================================================== -->
+  <section id="skills" class="py-20 md:py-28 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 reveal">
+        <div class="max-w-2xl">
+          <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">Core Competencies</p>
+          <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2">
+            Skills &amp; <span class="italic font-normal text-champagneDark">Areas of Expertise</span>
+          </h2>
+        </div>
+        <p class="text-sm text-slateInk max-w-md">
+          Combining real estate acumen, structured financial principles, and genuine relationship-building across London and international communities.
+        </p>
+      </div>
+
+      <!-- 6-Card Responsive Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        
+        <!-- Skill 1 -->
+        <div class="group bg-white rounded-3xl p-7 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial">
+          <div class="w-12 h-12 rounded-2xl bg-blushSoft text-obsidian flex items-center justify-center mb-5 group-hover:bg-obsidian group-hover:text-champagne transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01" />
+            </svg>
+          </div>
+          <h3 class="font-editorial text-2xl font-semibold text-obsidian">Real Estate Development</h3>
+          <p class="text-sm text-slateInk mt-2.5 leading-relaxed">
+            Identifying high-potential residential and commercial opportunities in Prime Central London, including the Fitzrovia and West End corridors.
+          </p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="group bg-white rounded-3xl p-7 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial">
+          <div class="w-12 h-12 rounded-2xl bg-blushSoft text-obsidian flex items-center justify-center mb-5 group-hover:bg-obsidian group-hover:text-champagne transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <h3 class="font-editorial text-2xl font-semibold text-obsidian">Portfolio Diversification</h3>
+          <p class="text-sm text-slateInk mt-2.5 leading-relaxed">
+            Balancing risk and resilient returns by structuring capital across short-term, mid-term, and long-term investment horizons.
+          </p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="group bg-white rounded-3xl p-7 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial">
+          <div class="w-12 h-12 rounded-2xl bg-blushSoft text-obsidian flex items-center justify-center mb-5 group-hover:bg-obsidian group-hover:text-champagne transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-editorial text-2xl font-semibold text-obsidian">“Profit First” Financial Discipline</h3>
+          <p class="text-sm text-slateInk mt-2.5 leading-relaxed">
+            Applying the Profit First methodology to ensure sustainable cash flow, disciplined capital allocation, and long-term business health.
+          </p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="group bg-white rounded-3xl p-7 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial">
+          <div class="w-12 h-12 rounded-2xl bg-blushSoft text-obsidian flex items-center justify-center mb-5 group-hover:bg-obsidian group-hover:text-champagne transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-editorial text-2xl font-semibold text-obsidian">Cross-Cultural Networking</h3>
+          <p class="text-sm text-slateInk mt-2.5 leading-relaxed">
+            Connecting with people from diverse backgrounds and cultures—building meaningful, collaborative relationships across the UK and Bangladesh.
+          </p>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="group bg-white rounded-3xl p-7 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial">
+          <div class="w-12 h-12 rounded-2xl bg-blushSoft text-obsidian flex items-center justify-center mb-5 group-hover:bg-obsidian group-hover:text-champagne transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="font-editorial text-2xl font-semibold text-obsidian">Capital &amp; Market Awareness</h3>
+          <p class="text-sm text-slateInk mt-2.5 leading-relaxed">
+            Understanding liquidity, brokerage ecosystems, and market makers—including familiarity with UK financial institutions like Winterflood Securities and Marex.
+          </p>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="group bg-white rounded-3xl p-7 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial">
+          <div class="w-12 h-12 rounded-2xl bg-blushSoft text-obsidian flex items-center justify-center mb-5 group-hover:bg-obsidian group-hover:text-champagne transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+            </svg>
+          </div>
+          <h3 class="font-editorial text-2xl font-semibold text-obsidian">Creative Vision &amp; Balance</h3>
+          <p class="text-sm text-slateInk mt-2.5 leading-relaxed">
+            Cultivating clarity through painting, sketching, meditation, and physical fitness—bringing calm focus to high-stakes entrepreneurial decisions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. EXPERIENCE & INVESTMENT PHILOSOPHY SECTION                         -->
+  <!-- ===================================================================== -->
+  <section id="experience" class="py-20 md:py-28 bg-obsidian text-alabaster relative overflow-hidden">
+    <div aria-hidden="true" class="pointer-events-none absolute top-0 right-0 w-[30rem] h-[30rem] rounded-full bg-champagne/10 blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        
+        <!-- Left Content: Career, Hudsons Property & Interactive Strategy Explorer -->
+        <div class="lg:col-span-7 space-y-8 reveal">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-champagne font-semibold">Professional Journey &amp; Strategy</p>
+            <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-white mt-2 leading-tight">
+              Real Estate Development &amp; <span class="italic font-normal text-champagne">Strategic Investments</span>
+            </h2>
+          </div>
+
+          <p class="text-alabaster/80 leading-relaxed text-base">
+            Following the completion of my Business degree, I launched my entrepreneurial career in property development and investment. Operating in Central London, my work centers on prime property markets—including association with <strong class="text-white font-semibold">Hudsons Property</strong> on <strong class="text-champagne font-medium">Charlotte Street in Fitzrovia, London’s West End</strong>.
+          </p>
+
+          <!-- Key Professional Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-charcoal border border-white/10">
+              <p class="text-xs uppercase tracking-widest text-champagne font-semibold">West End Presence</p>
+              <h3 class="font-editorial text-2xl text-white mt-1">Hudsons Property</h3>
+              <p class="text-xs text-alabaster/75 mt-1.5 leading-relaxed">
+                Connected to Fitzrovia &amp; Charlotte Street in London’s West End—one of the capital’s most sought-after residential and commercial districts.
+              </p>
+            </div>
+            <div class="p-5 rounded-2xl bg-charcoal border border-white/10">
+              <p class="text-xs uppercase tracking-widest text-champagne font-semibold">Core Methodology</p>
+              <h3 class="font-editorial text-2xl text-white mt-1">Profit First &amp; Diversification</h3>
+              <p class="text-xs text-alabaster/75 mt-1.5 leading-relaxed">
+                Prioritizing disciplined profit allocation and multi-horizon asset diversification to protect capital while compounding sustainable growth.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Investment Horizon Explorer -->
+          <div class="bg-charcoal/90 rounded-3xl p-6 sm:p-8 border border-champagne/30">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+              <div>
+                <span class="text-[11px] uppercase tracking-[0.2em] text-champagne font-semibold">Portfolio Architecture</span>
+                <h3 class="font-editorial text-2xl text-white">Three-Horizon Investment Framework</h3>
+              </div>
+              <!-- Interactive Filter Buttons -->
+              <div class="inline-flex rounded-full bg-obsidian p-1 border border-white/10" role="tablist" aria-label="Investment Horizon Tabs">
+                <button type="button" data-horizon="long" class="horizon-tab px-3.5 py-1.5 rounded-full text-xs font-semibold bg-champagne text-obsidian transition-all">
+                  Long-Term
+                </button>
+                <button type="button" data-horizon="mid" class="horizon-tab px-3.5 py-1.5 rounded-full text-xs font-semibold text-alabaster/75 hover:text-white transition-all">
+                  Mid-Term
+                </button>
+                <button type="button" data-horizon="short" class="horizon-tab px-3.5 py-1.5 rounded-full text-xs font-semibold text-alabaster/75 hover:text-white transition-all">
+                  Short-Term
+                </button>
+              </div>
+            </div>
+
+            <!-- Dynamic Tab Display Panel -->
+            <div id="horizon-panel" class="p-5 rounded-2xl bg-obsidian/80 border border-white/8 transition-all duration-300">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <h4 id="horizon-title" class="font-editorial text-2xl text-champagne">Long-Term Wealth &amp; Equity Growth</h4>
+                <span id="horizon-badge" class="px-3 py-1 rounded-full bg-champagne/15 text-champagne text-[11px] font-medium">Core Foundation</span>
+              </div>
+              <p id="horizon-desc" class="text-sm text-alabaster/80 leading-relaxed">
+                Focused on prime real estate assets, capital appreciation, and enduring equity holdings in resilient London locations—designed to compound wealth steadily over multi-year cycles.
+              </p>
+            </div>
+
+            <!-- Institutional & Mentorship Footnote -->
+            <div class="mt-5 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-alabaster/65">
+              <span>Inspired by strategic wealth principles (<strong class="text-alabaster/90">Toby Mathis</strong>)</span>
+              <span>Market familiarity: <strong class="text-alabaster/90">Winterflood Securities</strong> &amp; <strong class="text-alabaster/90">Marex</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Editorial Portrait -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative max-w-md mx-auto lg:max-w-none">
+            <div aria-hidden="true" class="absolute -inset-3 rounded-[2rem] border border-champagne/35 -translate-x-2 translate-y-2"></div>
+            <div class="photo-frame relative rounded-[2rem] overflow-hidden aspect-[4/5] bg-charcoal shadow-editorial">
+              <img 
+                src="assets/london_riverside_maroon_portrait.png" 
+                alt="Sinthiya Islam — Editorial look in Central London" 
+                class="w-full h-full object-cover object-top"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/1E1E22/C5A059?text=Sinthiya+Islam';"
+              />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-obsidian/90 via-obsidian/30 to-transparent p-6">
+                <p class="text-xs uppercase tracking-[0.2em] text-champagne font-semibold">Fitzrovia • West End • London</p>
+                <p class="font-editorial text-xl text-white mt-1">Vision, Discipline &amp; Long-Term Stewardship</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. MILESTONES, CULTURE & LIFESTYLE PILLARS                            -->
+  <!-- ===================================================================== -->
+  <section id="milestones" class="py-20 md:py-28 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="max-w-3xl mb-14 reveal">
+        <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">Beyond the Boardroom</p>
+        <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2">
+          Milestones, Culture &amp; <span class="italic font-normal text-champagneDark">Personal Passions</span>
+        </h2>
+        <p class="text-slateInk mt-3 text-base leading-relaxed">
+          A well-lived life balances ambition with wellness, cultural pride, outdoor adventure, and creative mindfulness.
+        </p>
+      </div>
+
+      <!-- 4 Bento Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 reveal">
+        
+        <!-- Card 1: British Citizenship & London Milestone -->
+        <div class="bg-white rounded-3xl p-8 border border-obsidian/8 shadow-sm hover:shadow-editorial transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3.5 py-1 rounded-full bg-champagne/15 text-champagneDark text-xs font-semibold uppercase tracking-wider">Milestone</span>
+            <span class="font-editorial text-xl text-obsidian font-semibold">2019 — Present</span>
+          </div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">British Citizenship &amp; London Life</h3>
+          <p class="text-sm text-slateInk mt-3 leading-relaxed">
+            Having lived in the United Kingdom for nearly eight years and proudly attaining <strong class="text-obsidian font-semibold">UK Citizenship</strong>, I embrace London’s diversity, historic architecture, and boundless opportunities for personal and entrepreneurial growth.
+          </p>
+        </div>
+
+        <!-- Card 2: Bengali Heritage & Community -->
+        <div class="bg-white rounded-3xl p-8 border border-obsidian/8 shadow-sm hover:shadow-editorial transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3.5 py-1 rounded-full bg-blushSoft text-obsidian text-xs font-semibold uppercase tracking-wider">Heritage &amp; Community</span>
+            <span class="font-editorial text-xl text-obsidian font-semibold">Sylhet &amp; London</span>
+          </div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">Celebrating Bengali Culture</h3>
+          <p class="text-sm text-slateInk mt-3 leading-relaxed">
+            In London, I actively participate in <strong class="text-obsidian font-semibold">Pohela Boishakh (Bengali New Year)</strong>, <strong class="text-obsidian font-semibold">Eid celebrations</strong>, and Bangladeshi community gatherings. Nothing brings comfort quite like authentic Bengali cuisine—from biryani and fuchka to home-cooked meals.
+          </p>
+        </div>
+
+        <!-- Card 3: Sports, Outdoors & The Swiss Alps Dream -->
+        <div class="bg-white rounded-3xl p-8 border border-obsidian/8 shadow-sm hover:shadow-editorial transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3.5 py-1 rounded-full bg-champagne/15 text-champagneDark text-xs font-semibold uppercase tracking-wider">Sports &amp; Travel</span>
+            <span class="font-editorial text-xl text-obsidian font-semibold">Active Outdoors</span>
+          </div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">Athletics &amp; The Swiss Alps</h3>
+          <p class="text-sm text-slateInk mt-3 leading-relaxed">
+            I love staying active through <strong class="text-obsidian font-semibold">tennis, golf, badminton, and swimming</strong>, alongside following cricket. At the top of my travel aspirations is hiking through the <strong class="text-obsidian font-semibold">Swiss Alps</strong>—drawn to its towering peaks, crystal-blue lakes, and serene mountain valleys.
+          </p>
+        </div>
+
+        <!-- Card 4: Creative Painting, Wellness & Advocacy -->
+        <div class="bg-white rounded-3xl p-8 border border-obsidian/8 shadow-sm hover:shadow-editorial transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3.5 py-1 rounded-full bg-blushSoft text-obsidian text-xs font-semibold uppercase tracking-wider">Mindfulness &amp; Health</span>
+            <span class="font-editorial text-xl text-obsidian font-semibold">Balance</span>
+          </div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-semibold text-obsidian">Painting, Wellness &amp; Giving Back</h3>
+          <p class="text-sm text-slateInk mt-3 leading-relaxed">
+            <strong class="text-obsidian font-semibold">Painting and sketching</strong> serve as my creative sanctuary to unwind and spark fresh ideas, complemented by meditation, regular gym sessions, and reading. With an <strong class="text-obsidian font-semibold">O+ blood group</strong>, I also deeply value health awareness and blood donation advocacy.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. CURATED PHOTO GALLERY WITH LIGHTBOX                                -->
+  <!-- ===================================================================== -->
+  <section id="gallery" class="py-20 md:py-28 bg-ivory/80 border-y border-obsidian/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">Visual Portfolio</p>
+          <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2">
+            Moments &amp; <span class="italic font-normal text-champagneDark">Portraits</span>
+          </h2>
+        </div>
+        <p class="text-sm text-slateInk max-w-md">
+          Click any photograph to view in full editorial detail.
+        </p>
+      </div>
+
+      <!-- 4-Photo Responsive Editorial Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        
+        <!-- Photo 1 -->
+        <button type="button" onclick="openLightbox(0)" class="group text-left focus:outline-none">
+            <div class="photo-frame relative rounded-3xl overflow-hidden aspect-[3/4] bg-charcoal shadow-editorial border border-obsidian/10">
+              <img 
+                src="assets/london_riverside_maroon_portrait.png" 
+                alt="Sinthiya Islam — Executive Confidence" 
+                class="w-full h-full object-cover object-top"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/1E1E22/C5A059?text=Portrait+1';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
+                <span class="text-[10px] uppercase tracking-widest text-champagne font-semibold">Central London</span>
+                <p class="font-editorial text-xl text-white mt-0.5">Executive Poise</p>
+              </div>
+            </div>
+        </button>
+
+        <!-- Photo 2 -->
+        <button type="button" onclick="openLightbox(1)" class="group text-left focus:outline-none">
+            <div class="photo-frame relative rounded-3xl overflow-hidden aspect-[3/4] bg-charcoal shadow-editorial border border-obsidian/10">
+              <img 
+                src="assets/fitzrovia_cafe_portrait_london.png" 
+                alt="Sinthiya Islam at a Fitzrovia cafe in London" 
+                class="w-full h-full object-cover object-center"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/E8D5CE/141416?text=Portrait+2';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
+                <span class="text-[10px] uppercase tracking-widest text-champagne font-semibold">Authentic &amp; Personal</span>
+                <p class="font-editorial text-xl text-white mt-0.5">Warmth &amp; Grace</p>
+              </div>
+            </div>
+        </button>
+
+        <!-- Photo 3 -->
+        <button type="button" onclick="openLightbox(2)" class="group text-left focus:outline-none">
+            <div class="photo-frame relative rounded-3xl overflow-hidden aspect-[3/4] bg-charcoal shadow-editorial border border-obsidian/10">
+              <img 
+                src="assets/dream_big_plan_smart_achieve_more.png" 
+                alt="Sinthiya Islam with a Dream Big, Plan Smart, Achieve More message" 
+                class="w-full h-full object-cover object-top"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/1E1E22/C5A059?text=Portrait+3';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
+                <span class="text-[10px] uppercase tracking-widest text-champagne font-semibold">Editorial Series</span>
+                <p class="font-editorial text-xl text-white mt-0.5">Forward Vision</p>
+              </div>
+            </div>
+        </button>
+
+        <!-- Photo 4 -->
+        <button type="button" onclick="openLightbox(3)" class="group text-left focus:outline-none">
+            <div class="photo-frame relative rounded-3xl overflow-hidden aspect-[3/4] bg-charcoal shadow-editorial border border-obsidian/10">
+              <img 
+                src="assets/evening_reflections_cozy_art_studio.png" 
+                alt="Sinthiya Islam at an art studio in the evening" 
+                class="w-full h-full object-cover object-center"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/E8D5CE/141416?text=Portrait+4';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
+                <span class="text-[10px] uppercase tracking-widest text-champagne font-semibold">Candid Moment</span>
+                <p class="font-editorial text-xl text-white mt-0.5">Evening Reflections</p>
+              </div>
+            </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9. SOCIAL MEDIA CONNECT HUB                                           -->
+  <!-- ===================================================================== -->
+  <section id="social" class="py-20 md:py-24 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">Digital Presence</p>
+        <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2">
+          Connect Across <span class="italic font-normal text-champagneDark">Social Platforms</span>
+        </h2>
+        <p class="text-slateInk mt-3 text-base">
+          Follow my journey in London, real estate insights, travel moments, and community updates on my official channels.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        
+        <!-- Instagram Card -->
+        <a href="https://www.instagram.com/sinthiya81islam/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-3xl p-8 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-obsidian text-champagne flex items-center justify-center group-hover:bg-champagne group-hover:text-obsidian transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-widest text-champagneDark group-hover:translate-x-1 transition-transform">Follow &rarr;</span>
+            </div>
+            <h3 class="font-editorial text-2xl font-semibold text-obsidian">Instagram</h3>
+            <p class="text-sm font-medium text-champagneDark mt-0.5">@sinthiya81islam</p>
+            <p class="text-sm text-slateInk mt-3">Visual stories from Central London, lifestyle highlights, cultural celebrations, and personal moments.</p>
+          </div>
+        </a>
+
+        <!-- Facebook Page Card -->
+        <a href="https://www.facebook.com/yoursinthiyaislam" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-3xl p-8 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-obsidian text-champagne flex items-center justify-center group-hover:bg-champagne group-hover:text-obsidian transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-widest text-champagneDark group-hover:translate-x-1 transition-transform">Connect &rarr;</span>
+            </div>
+            <h3 class="font-editorial text-2xl font-semibold text-obsidian">Facebook Page</h3>
+            <p class="text-sm font-medium text-champagneDark mt-0.5">/yoursinthiyaislam</p>
+            <p class="text-sm text-slateInk mt-3">Community updates, reflections on life between Sylhet and the UK, and direct page engagement.</p>
+          </div>
+        </a>
+
+        <!-- X (Twitter) Card -->
+        <a href="https://x.com/sinthiyaislam81" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-3xl p-8 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-obsidian text-champagne flex items-center justify-center group-hover:bg-champagne group-hover:text-obsidian transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-widest text-champagneDark group-hover:translate-x-1 transition-transform">Follow &rarr;</span>
+            </div>
+            <h3 class="font-editorial text-2xl font-semibold text-obsidian">X (Twitter)</h3>
+            <p class="text-sm font-medium text-champagneDark mt-0.5">@sinthiyaislam81</p>
+            <p class="text-sm text-slateInk mt-3">Real-time thoughts on entrepreneurship, property markets, global perspectives, and daily inspiration.</p>
+          </div>
+        </a>
+
+        <!-- Email Card -->
+        <a href="mailto:sinthiyaislam2026@atomicmail.io" class="group bg-white rounded-3xl p-8 border border-obsidian/8 hover:border-champagne transition-all duration-300 shadow-sm hover:shadow-editorial flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-12 h-12 rounded-2xl bg-obsidian text-champagne flex items-center justify-center group-hover:bg-champagne group-hover:text-obsidian transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="3"/>
+                  <path d="m3 7 9 6 9-6"/>
+                </svg>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-widest text-champagneDark group-hover:translate-x-1 transition-transform">Email &rarr;</span>
+            </div>
+            <h3 class="font-editorial text-2xl font-semibold text-obsidian">Email</h3>
+            <p class="text-sm font-medium text-champagneDark mt-0.5 break-words">sinthiyaislam2026@atomicmail.io</p>
+            <p class="text-sm text-slateInk mt-3">Contact me directly by email.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 10. CONTACT ME SECTION                                                -->
+  <!-- ===================================================================== -->
+  <section id="contact" class="py-20 md:py-28 bg-ivory/70 border-t border-obsidian/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="bg-white rounded-[2.25rem] p-8 sm:p-12 lg:p-16 border border-obsidian/8 shadow-editorial reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Info Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-champagneDark font-semibold">Get in Touch</p>
+              <h2 class="font-editorial text-4xl sm:text-5xl font-semibold text-obsidian mt-2 leading-tight">
+                Let’s Start a <span class="italic font-normal text-champagneDark">Conversation</span>
+              </h2>
+            </div>
+
+            <p class="text-slateInk text-sm sm:text-base leading-relaxed">
+              Whether you would like to discuss real estate development opportunities in Central London, investment strategy, or cross-cultural networking, I welcome thoughtful connections.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-full bg-blushSoft flex items-center justify-center text-obsidian shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-slateInk font-semibold">Primary Residence &amp; Base</p>
+                  <p class="font-editorial text-xl font-semibold text-obsidian">Central London, United Kingdom</p>
+                  <p class="text-xs text-slateInk mt-0.5">West End / Fitzrovia Business Circle</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-full bg-blushSoft flex items-center justify-center text-obsidian shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-slateInk font-semibold">Direct Social Channels</p>
+                  <div class="flex flex-wrap gap-3 mt-1.5 text-sm font-medium text-obsidian">
+                    <a href="https://www.instagram.com/sinthiya81islam/" target="_blank" rel="noopener noreferrer" class="underline decoration-champagne hover:text-champagneDark">Instagram</a>
+                    <span>•</span>
+                    <a href="https://www.facebook.com/yoursinthiyaislam" target="_blank" rel="noopener noreferrer" class="underline decoration-champagne hover:text-champagneDark">Facebook</a>
+                    <span>•</span>
+                    <a href="https://x.com/sinthiyaislam81" target="_blank" rel="noopener noreferrer" class="underline decoration-champagne hover:text-champagneDark">X (@sinthiyaislam81)</a>
+                    <span>•</span>
+                    <a href="mailto:sinthiyaislam2026@atomicmail.io" class="underline decoration-champagne hover:text-champagneDark">sinthiyaislam2026@atomicmail.io</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Functional Inquiry Form -->
+          <div class="lg:col-span-7">
+            <form id="contact-form" class="space-y-5 bg-alabaster p-6 sm:p-8 rounded-3xl border border-obsidian/5" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="sender-name" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-2">Your Name *</label>
+                  <input type="text" id="sender-name" name="name" required placeholder="Enter your full name" class="w-full px-4 py-3.5 rounded-2xl bg-white border border-obsidian/12 text-sm text-obsidian focus:outline-none focus:border-champagne transition-colors" />
+                </div>
+                <div>
+                  <label for="sender-email" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-2">Email Address *</label>
+                  <input type="email" id="sender-email" name="email" required placeholder="you@example.com" class="w-full px-4 py-3.5 rounded-2xl bg-white border border-obsidian/12 text-sm text-obsidian focus:outline-none focus:border-champagne transition-colors" />
+                </div>
+              </div>
+
+              <div>
+                <label for="inquiry-topic" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-2">Topic of Inquiry</label>
+                <select id="inquiry-topic" name="topic" class="w-full px-4 py-3.5 rounded-2xl bg-white border border-obsidian/12 text-sm text-obsidian focus:outline-none focus:border-champagne transition-colors">
+                  <option value="Real Estate Development & Investment">Real Estate Development &amp; Investment</option>
+                  <option value="Business Collaboration & Networking">Business Collaboration &amp; Networking</option>
+                  <option value="General Greeting / Community">General Greeting / Community</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="sender-message" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-2">Message *</label>
+                <textarea id="sender-message" name="message" rows="4" required placeholder="Write your message for Sinthiya..." class="w-full px-4 py-3.5 rounded-2xl bg-white border border-obsidian/12 text-sm text-obsidian focus:outline-none focus:border-champagne transition-colors resize-none"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
+                <button type="submit" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-obsidian text-alabaster text-sm font-semibold tracking-wide hover:bg-champagne hover:text-obsidian transition-all duration-300 shadow-sm">
+                  <span>Send Message</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+                <span class="text-xs text-slateInk">Or message directly via Instagram or X.</span>
+              </div>
+
+              <!-- Custom Non-Alert Status Message Box -->
+              <div id="form-feedback" class="hidden p-4 rounded-2xl text-sm font-medium" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 11. FOOTER                                                            -->
+  <!-- ===================================================================== -->
+  <footer class="bg-obsidian text-alabaster py-14 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-white/10">
+        <div>
+          <a href="#home" class="font-editorial text-3xl font-semibold text-white tracking-tight">
+            Sinthiya <span class="italic font-normal text-champagne">Islam</span>
+          </a>
+          <p class="text-xs text-alabaster/65 mt-1.5 tracking-wide">
+            Entrepreneur &bull; Real Estate Development &amp; Investments &bull; Central London, UK
+          </p>
+        </div>
+
+        <!-- Simple Navigation Links -->
+        <nav class="flex flex-wrap gap-6 text-sm text-alabaster/75" aria-label="Footer Navigation">
+          <a href="#home" class="hover:text-champagne transition-colors">Home</a>
+          <a href="#about" class="hover:text-champagne transition-colors">About</a>
+          <a href="#education" class="hover:text-champagne transition-colors">Education</a>
+          <a href="#experience" class="hover:text-champagne transition-colors">Ventures</a>
+          <a href="#gallery" class="hover:text-champagne transition-colors">Gallery</a>
+          <a href="#contact" class="hover:text-champagne transition-colors">Contact</a>
+        </nav>
+
+        <!-- Exact Social Media Links -->
+        <div class="flex items-center gap-3">
+          <a href="https://www.instagram.com/sinthiya81islam/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-alabaster hover:bg-champagne hover:text-obsidian hover:border-champagne transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/yoursinthiyaislam" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-alabaster hover:bg-champagne hover:text-obsidian hover:border-champagne transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+            </svg>
+          </a>
+          <a href="https://x.com/sinthiyaislam81" target="_blank" rel="noopener noreferrer" aria-label="X" class="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-alabaster hover:bg-champagne hover:text-obsidian hover:border-champagne transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="mailto:sinthiyaislam2026@atomicmail.io" aria-label="Email Sinthiya" class="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center text-alabaster hover:bg-champagne hover:text-obsidian hover:border-champagne transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="3"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-alabaster/55">
+        <p>&copy; 2026 Sinthiya Islam. All rights reserved.</p>
+        <p>From Ratargul, Sylhet &bull; Manchester &bull; Central London, UK</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- LIGHTBOX MODAL FOR GALLERY PHOTOS                                     -->
+  <!-- ===================================================================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-obsidian/92 backdrop-blur-md flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <div class="relative max-w-3xl w-full bg-charcoal rounded-3xl overflow-hidden border border-champagne/30 shadow-2xl">
+      <!-- Close Button -->
+      <button type="button" onclick="closeLightbox()" aria-label="Close Gallery Preview" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-obsidian/80 text-white hover:bg-champagne hover:text-obsidian flex items-center justify-center transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-7 bg-obsidian flex items-center justify-center max-h-[75vh]">
+          <img id="lightbox-img" src="" alt="Sinthiya Islam Portrait Preview" class="w-full h-full object-contain max-h-[75vh]" />
+        </div>
+        <div class="md:col-span-5 p-6 sm:p-8 flex flex-col justify-between text-alabaster">
+          <div>
+            <span id="lightbox-tag" class="text-xs uppercase tracking-[0.2em] text-champagne font-semibold">Central London</span>
+            <h3 id="lightbox-title" class="font-editorial text-3xl font-semibold text-white mt-2">Portrait Title</h3>
+            <p id="lightbox-caption" class="text-sm text-alabaster/80 mt-4 leading-relaxed">
+              Portrait description.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/10 flex items-center justify-between gap-3">
+            <button type="button" onclick="navigateLightbox(-1)" class="px-4 py-2 rounded-full bg-white/10 hover:bg-champagne hover:text-obsidian text-xs font-semibold transition-colors">
+              &larr; Previous
+            </button>
+            <span id="lightbox-counter" class="text-xs text-alabaster/60">1 / 4</span>
+            <button type="button" onclick="navigateLightbox(1)" class="px-4 py-2 rounded-full bg-white/10 hover:bg-champagne hover:text-obsidian text-xs font-semibold transition-colors">
+              Next &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT INTERACTIVITY                                              -->
+  <!-- ===================================================================== -->
+  <script>
+    // 1. Mobile Drawer Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function toggleMobileMenu() {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+      mobileMenuBtn.setAttribute('aria-expanded', String(isHidden));
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) {
+          toggleMobileMenu();
+        }
+      });
+    });
+
+    // 2. Scroll Reveal Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 3. Interactive Three-Horizon Investment Framework Tabs
+    const horizonData = {
+      long: {
+        title: 'Long-Term Wealth & Equity Growth',
+        badge: 'Core Foundation',
+        desc: 'Focused on prime real estate assets, capital appreciation, and enduring equity holdings in resilient London locations—designed to compound wealth steadily over multi-year cycles.'
+      },
+      mid: {
+        title: 'Mid-Term Development & Value-Add',
+        badge: 'Strategic Growth',
+        desc: 'Targeted property repositioning, development milestones, and structured capital deployment over 2–5 year horizons to unlock latent asset potential.'
+      },
+      short: {
+        title: 'Short-Term Liquidity & Profit First Reserves',
+        badge: 'Agility & Security',
+        desc: 'Maintaining healthy operating liquidity, disciplined Profit First reserves, and agile short-term market positioning to seize timely opportunities.'
+      }
+    };
+
+    const horizonTabs = document.querySelectorAll('.horizon-tab');
+    const horizonTitle = document.getElementById('horizon-title');
+    const horizonBadge = document.getElementById('horizon-badge');
+    const horizonDesc = document.getElementById('horizon-desc');
+
+    horizonTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const key = tab.getAttribute('data-horizon');
+        const info = horizonData[key];
+        if (!info) return;
+
+        // Update active button styling
+        horizonTabs.forEach(btn => {
+          btn.classList.remove('bg-champagne', 'text-obsidian');
+          btn.classList.add('text-alabaster/75');
+        });
+        tab.classList.add('bg-champagne', 'text-obsidian');
+        tab.classList.remove('text-alabaster/75');
+
+        // Update panel content
+        horizonTitle.textContent = info.title;
+        horizonBadge.textContent = info.badge;
+        horizonDesc.textContent = info.desc;
+      });
+    });
+
+    // 4. Gallery Lightbox Modal Logic
+    const galleryItems = [
+      {
+        src: 'assets/london_riverside_maroon_portrait.png',
+        tag: 'Central London • Executive Series',
+        title: 'Executive Poise',
+        caption: 'Reflecting confidence and focus in Central London—where entrepreneurial ambition meets prime real estate development and investment.'
+      },
+      {
+        src: 'assets/fitzrovia_cafe_portrait_london.png',
+        tag: 'Personal Portrait',
+        title: 'Warmth & Grace',
+        caption: 'Grounded in the values of Ratargul, Sylhet and enriched by nearly eight years of life, study, and citizenship in the United Kingdom.'
+      },
+      {
+        src: 'assets/dream_big_plan_smart_achieve_more.png',
+        tag: 'Fitzrovia & West End',
+        title: 'Forward Vision',
+        caption: 'Looking ahead toward new milestones in property development, diversified investing, and meaningful cross-cultural partnerships.'
+      },
+      {
+        src: 'assets/evening_reflections_cozy_art_studio.png',
+        tag: 'Candid Reflections',
+        title: 'Evening Reflections',
+        caption: 'Celebrating life’s simple joys—good company, cultural roots, creative painting, and a balanced approach to wellbeing.'
+      }
+    ];
+
+    let currentLightboxIndex = 0;
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTag = document.getElementById('lightbox-tag');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+
+    function updateLightboxContent() {
+      const item = galleryItems[currentLightboxIndex];
+      lightboxImg.src = item.src;
+      lightboxTag.textContent = item.tag;
+      lightboxTitle.textContent = item.title;
+      lightboxCaption.textContent = item.caption;
+      lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${galleryItems.length}`;
+    }
+
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      updateLightboxContent();
+      lightboxModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightboxModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function navigateLightbox(step) {
+      currentLightboxIndex = (currentLightboxIndex + step + galleryItems.length) % galleryItems.length;
+      updateLightboxContent();
+    }
+
+    // Close lightbox on backdrop click or Escape key
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!lightboxModal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+      }
+    });
+
+    // 5. Contact Form Submission Handler (No alert() used)
+    const contactForm = document.getElementById('contact-form');
+    const formFeedback = document.getElementById('form-feedback');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('sender-name').value.trim();
+      const email = document.getElementById('sender-email').value.trim();
+      const topic = document.getElementById('inquiry-topic').value;
+      const message = document.getElementById('sender-message').value.trim();
+
+      if (!name || !email || !message || !email.includes('@')) {
+        formFeedback.className = 'p-4 rounded-2xl text-sm font-medium bg-red-50 text-red-800 border border-red-200 block';
+        formFeedback.textContent = 'Please complete your name, a valid email address, and your message before sending.';
+        return;
+      }
+
+      formFeedback.className = 'p-4 rounded-2xl text-sm font-medium bg-obsidian text-champagne border border-champagne/40 block';
+      formFeedback.textContent = `Thank you, ${name}. Your inquiry regarding "${topic}" has been recorded. You may also connect directly with Sinthiya via Instagram (@sinthiya81islam) or X (@sinthiyaislam81).`;
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
